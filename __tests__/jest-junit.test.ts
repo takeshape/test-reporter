@@ -126,7 +126,7 @@ describe('jest-junit tests', () => {
     fs.writeFileSync(outputPath, report)
   })
 
-  it.only('report from vitest results matches snapshot', async () => {
+  it('report from vitest results matches snapshot', async () => {
     const fixturePath = path.join(__dirname, 'fixtures', 'vitest-junit.xml')
     const filePath = normalizeFilePath(path.relative(__dirname, fixturePath))
     const fileContent = fs.readFileSync(fixturePath, {encoding: 'utf8'})
