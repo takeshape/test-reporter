@@ -1,10 +1,10 @@
 import * as fs from 'fs'
 import * as path from 'path'
 
-import { JestJunitParser } from '../src/parsers/jest-junit/jest-junit-parser'
-import { getReport } from '../src/report/get-report'
-import { ParseOptions } from '../src/test-parser'
-import { normalizeFilePath } from '../src/utils/path-utils'
+import {JestJunitParser} from '../src/parsers/jest-junit/jest-junit-parser'
+import {getReport} from '../src/report/get-report'
+import {ParseOptions} from '../src/test-parser'
+import {normalizeFilePath} from '../src/utils/path-utils'
 
 describe('jest-junit tests', () => {
   it('produces empty test run result when there are no test cases in the testsuites element', async () => {
