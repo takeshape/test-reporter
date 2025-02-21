@@ -32270,3 +32270,120 @@ Received string:  "·
   "totalTime": 165872,
 }
 `;
+
+exports[`jest-junit tests report from vitest results matches snapshot 1`] = `
+TestRunResult {
+  "path": "fixtures/vitest-junit.xml",
+  "suites": [
+    TestSuiteResult {
+      "groups": [
+        TestGroupResult {
+          "name": "__tests__/main.test.js",
+          "tests": [
+            TestCaseResult {
+              "error": {
+                "details": "
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ __tests__/main.test.js:10:18
+            ",
+                "line": undefined,
+                "path": undefined,
+              },
+              "name": "DEBUG > REMOVE ME",
+              "result": "failed",
+              "time": 7.923128999999999,
+            },
+            TestCaseResult {
+              "error": undefined,
+              "name": "getAgentEndTransitions > chat",
+              "result": "success",
+              "time": 0.727582,
+            },
+            TestCaseResult {
+              "error": undefined,
+              "name": "getAgentEndTransitions > findDogColor",
+              "result": "success",
+              "time": 0.447973,
+            },
+            TestCaseResult {
+              "error": undefined,
+              "name": "getAgentEndStates > chat",
+              "result": "success",
+              "time": 0.427164,
+            },
+            TestCaseResult {
+              "error": undefined,
+              "name": "getAgentEndStates > findDogColor",
+              "result": "success",
+              "time": 0.34848799999999996,
+            },
+            TestCaseResult {
+              "error": undefined,
+              "name": "getInspectAgentSessionQueryName > it works",
+              "result": "success",
+              "time": 0.329532,
+            },
+          ],
+        },
+      ],
+      "name": "__tests__/main.test.js",
+      "totalTime": 11.991192,
+    },
+    TestSuiteResult {
+      "groups": [
+        TestGroupResult {
+          "name": "__tests__/second.test.js",
+          "tests": [
+            TestCaseResult {
+              "error": undefined,
+              "name": "workflowsEnabled - new api",
+              "result": "success",
+              "time": 1.83456,
+            },
+            TestCaseResult {
+              "error": undefined,
+              "name": "workflowsEnabled - legacy api",
+              "result": "success",
+              "time": 0.473871,
+            },
+            TestCaseResult {
+              "error": undefined,
+              "name": "whereClauseEnabled - new api",
+              "result": "success",
+              "time": 0.294738,
+            },
+            TestCaseResult {
+              "error": undefined,
+              "name": "whereClauseEnabled - legacy api",
+              "result": "success",
+              "time": 0.267527,
+            },
+            TestCaseResult {
+              "error": undefined,
+              "name": "createVersionPredicate - throw feature version coercion error",
+              "result": "success",
+              "time": 1.437813,
+            },
+            TestCaseResult {
+              "error": undefined,
+              "name": "createVersionPredicate - throw api version coercion error",
+              "result": "success",
+              "time": 0.426483,
+            },
+          ],
+        },
+      ],
+      "name": "__tests__/second.test.js",
+      "totalTime": 6.205176,
+    },
+  ],
+  "totalTime": 16930,
+}
+`;

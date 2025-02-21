@@ -1,17 +1,17 @@
-import {ParseOptions, TestParser} from '../../test-parser'
 import {parseStringPromise} from 'xml2js'
+import {ParseOptions, TestParser} from '../../test-parser'
 
-import {JunitReport, TestCase, TestSuite} from './jest-junit-types'
 import {getExceptionSource} from '../../utils/node-utils'
 import {getBasePath, normalizeFilePath} from '../../utils/path-utils'
+import {JunitReport, TestCase, TestSuite} from './jest-junit-types'
 
 import {
-  TestExecutionResult,
-  TestRunResult,
-  TestSuiteResult,
-  TestGroupResult,
+  TestCaseError,
   TestCaseResult,
-  TestCaseError
+  TestExecutionResult,
+  TestGroupResult,
+  TestRunResult,
+  TestSuiteResult
 } from '../../test-results'
 
 export class JestJunitParser implements TestParser {
@@ -85,7 +85,7 @@ export class JestJunitParser implements TestParser {
       return undefined
     }
 
-    const details = tc.failure[0] || (tc.failure[0] as unknown as {_: string})._
+    const details = typeof tc.failure[0] === 'string' ? tc.failure[0] : (tc.failure[0] as unknown as {_: string})._
     let path
     let line
 

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="12" failures="1" errors="0" time="16.93">
+    <testsuite name="__tests__/main.test.js" timestamp="2025-02-21T19:05:06.022Z" hostname="runner" tests="6" failures="1" errors="0" skipped="0" time="0.011991192">
+        <testcase classname="__tests__/main.test.js" name="DEBUG &gt; REMOVE ME" time="0.007923129">
+            <failure message="expected true to be false // Object.is equality" type="AssertionError">
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ __tests__/main.test.js:10:18
+            </failure>
+        </testcase>
+        <testcase classname="__tests__/main.test.js" name="getAgentEndTransitions &gt; chat" time="0.000727582">
+        </testcase>
+        <testcase classname="__tests__/main.test.js" name="getAgentEndTransitions &gt; findDogColor" time="0.000447973">
+        </testcase>
+        <testcase classname="__tests__/main.test.js" name="getAgentEndStates &gt; chat" time="0.000427164">
+        </testcase>
+        <testcase classname="__tests__/main.test.js" name="getAgentEndStates &gt; findDogColor" time="0.000348488">
+        </testcase>
+        <testcase classname="__tests__/main.test.js" name="getInspectAgentSessionQueryName &gt; it works" time="0.000329532">
+        </testcase>
+    </testsuite>
+    <testsuite name="__tests__/second.test.js" timestamp="2025-02-21T19:05:06.024Z" hostname="runner" tests="6" failures="0" errors="0" skipped="0" time="0.006205176">
+        <testcase classname="__tests__/second.test.js" name="workflowsEnabled - new api" time="0.00183456">
+        </testcase>
+        <testcase classname="__tests__/second.test.js" name="workflowsEnabled - legacy api" time="0.000473871">
+        </testcase>
+        <testcase classname="__tests__/second.test.js" name="whereClauseEnabled - new api" time="0.000294738">
+        </testcase>
+        <testcase classname="__tests__/second.test.js" name="whereClauseEnabled - legacy api" time="0.000267527">
+        </testcase>
+        <testcase classname="__tests__/second.test.js" name="createVersionPredicate - throw feature version coercion error" time="0.001437813">
+        </testcase>
+        <testcase classname="__tests__/second.test.js" name="createVersionPredicate - throw api version coercion error" time="0.000426483">
+        </testcase>
+    </testsuite>
+</testsuites>
